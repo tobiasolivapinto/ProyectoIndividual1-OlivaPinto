@@ -10,7 +10,7 @@ app = FastAPI()
 #@app.get("/")
 
 #Carga de base de datos con las tarnsformaciones ya realizdas 
-movies_db = pd.read_csv("/Users/tobiasolivapinto/Desktop/movies_db_mod4.cvs")
+movies_db = pd.read_csv("/Users/tobiasolivapinto/Desktop/Proyecto Individual 1/movies_db_mod4.cvs")
 
 #Creamos un directorio index con un mensaje de bienvenida
 @app.get("/")
