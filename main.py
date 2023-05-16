@@ -1,6 +1,8 @@
 #Librerias Utilizadas
 from fastapi import FastAPI
 import pandas as pd
+import ast
+import numpy as np
 
 #Creacion de la APP
 app = FastAPI()
@@ -10,7 +12,21 @@ app = FastAPI()
 #@app.get("/")
 
 #Carga de base de datos con las tarnsformaciones ya realizdas 
-movies_db = pd.read_csv("movies_db_mod4.cvs")
+movies_db = pd.read_csv("movies_db_mod7.cvs")
+
+#Definimos funcion para cambiar de str a list
+def safe_literal_eval(x):
+    if isinstance(x, str) and x != 'nan':
+        return ast.literal_eval(x)
+    else:
+        return np.nan
+
+#Cambiamos de str a list
+movies_db["production_countries"] = movies_db["production_countries"].apply(safe_literal_eval)
+movies_db["production_companies"] = movies_db["production_companies"].apply(safe_literal_eval)
+movies_db["genres"] = movies_db["genres"].apply(safe_literal_eval)
+
+
 
 #Creamos un directorio index con un mensaje de bienvenida
 @app.get("/")
@@ -72,7 +88,36 @@ def retorno(pelicula: str):
     return {"Pelicula": str(pelicula), "Inversion": int(inversion), "Ganancia": int(ganancia), "retorno": int(retorno), "ano": int(ano)}
 
 #ML
-#@app.get("/recomendacion/")
-#def recomendacion("titulo"):
-    #Se ingresa el nommbre de la pelicula y te recomienda las similares en una lista
-#   return {"lista recomendad" : respuesta}
+@app.get("/recomendacion/")
+def recomendacion(titulo):
+    pelicula = movies_db[movies_db['title'] == titulo]
+    
+    if pelicula.empty:
+        print("No se encontró la película en la base de datos.")
+        return []
+    
+    movies_db['similarity_score'] = 0
+    
+    for index, row in movies_db.iterrows():
+        score = 0
+        if row['belongs_to_collection'] == pelicula['belongs_to_collection'].values[0]:
+            score += 50
+        if set(row['genres']) & set(pelicula['genres'].values[0]):
+            score += 20
+        if set(row['production_companies']) & set(pelicula['production_companies'].values[0]):
+            score += 15
+        if row['original_language'] == pelicula['original_language'].values[0]:
+            score += 10
+        if row['year_range'] == pelicula['year_range'].values[0]:
+            score += 10
+        movies_db.loc[index, 'similarity_score'] = score
+
+    peliculas_similares = movies_db.sort_values('similarity_score', ascending=False)
+    
+    peliculas_similares = peliculas_similares[peliculas_similares['title'] != titulo]
+    
+    peliculas_recomendadas = peliculas_similares.head(5)
+    
+    lista_pelis = peliculas_recomendadas['title'].tolist()
+    
+    return {"Lista recomendada" : lista_pelis}
