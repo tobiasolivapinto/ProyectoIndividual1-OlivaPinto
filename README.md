@@ -35,8 +35,15 @@ Se prioriza si pertenece a la franquicia, luego el genero, despues la compania p
 Archivos
 
 En este proyecto podras encontrar:
-- Los datos ya sometidos al ETL y al EDA en el archivo "movies_db_mod7.cvs", como el nombre lo indica es una base de datos de peliculas (el mod7 corresponde a que tuve que hacerlo 7 veces antes de tenerlo en la forma correcta XD). 
+- Dentro de la carpeta Bases de Datos, esta la base de datos en sus tres versiones. Estas serian, los datos crudos tal y como nos los dieron, los datos despues de haber realizado el ETL, los datos despues de haber realizado el EDA.
+- Dentro de la carpeta ETL-EDA, se encuentran dos archivos .ipynb. Estos serian los dos analisis de la base de datos, el ETL y el EDA.
 - En el archivo "main.py" podras encontrar las consultas que se nos requirieron, incluida la de Machine Learning. 
+
+Despliegue web
+
+Este link sirve para testear las consultas y el modelo de recomendacion de peliculas (este ultimo tarda un poco, no se preocupen ;)).
+https://render-proyectoindividual1-olivapinto.onrender.com
+Le deben agregar un "/docs" al final para entrar en el entorno de prueba, si no lo hacen, solamente podran ver el mensaje de bienvenida. 
 
 Cierre
 
