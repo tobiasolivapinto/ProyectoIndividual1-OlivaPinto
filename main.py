@@ -6,10 +6,6 @@ import numpy as np
 #Creacion de la APP
 app = FastAPI()
 
-#Creamos la ruta para la API. La ruta raiz
-#http://127.0.0.1:8000
-#@app.get("/")
-
 #Carga de base de datos con las tarnsformaciones ya realizdas 
 movies_db = pd.read_csv("movies_db_mod7.cvs")
 
@@ -37,18 +33,47 @@ def index ():
 #Se desarollaran las consignas que fueron solicitadas
 
 @app.get("/peliculas_mes/{mes}")
-def peliculas_mes(mes: str):
-    #Se ingresa el mes y la funcion retorna la cantidad de peliculas que se estrenaron ese mes historicamente
-    mes = mes.capitalize()
-    cantidad = len(movies_db.loc[movies_db["month"] == mes, "title"])
-    return {"mes" : str(mes), "cantidad" : int(cantidad)}
+def peliculas_mes3(mes: str):
+    # Diccionario para mapear los nombres de los meses en español a inglés
+    meses = {
+        "enero": "january",
+        "febrero": "february",
+        "marzo": "march",
+        "abril": "april",
+        "mayo": "may",
+        "junio": "june",
+        "julio": "july",
+        "agosto": "august",
+        "septiembre": "september",
+        "octubre": "october",
+        "noviembre": "november",
+        "diciembre": "december"}
+    # Convertir el nombre del mes en español a minúsculas
+    mes = mes.lower()
+    # Obtener el nombre del mes en inglés utilizando el diccionario
+    mes_ingles = meses.get(mes)
+    if mes_ingles:
+        cantidad = len(movies_db.loc[movies_db["month"].str.lower() == mes_ingles, "title"])
+        return {"mes" : str(mes), "cantidad" : int(cantidad)}
 
 @app.get("/peliculas_dias/{dia}")
-def peliculas_dias(dia: str):
-    #Se ingres el dia y la funcion retorna la cantidad de peliculas que se estrenaron ese dia historicamente
-    dia = dia.capitalize()
-    cantidad = len(movies_db.loc[movies_db["day"] == dia, "title"])
-    return {"dia" : str(dia), "cantidad" : int(cantidad)}
+def peliculas_dias2(dia: str):
+    # Diccionario para mapear los nombres de los días en español a inglés
+    dias = {
+        "lunes": "monday",
+        "martes": "tuesday",
+        "miercoles": "wednesday",
+        "jueves": "thursday",
+        "viernes": "friday",
+        "sabado": "saturday",
+        "domingo": "sunday"}
+    # Convertir el nombre del día en español a minúsculas
+    dia = dia.lower()
+    # Obtener el nombre del día en inglés utilizando el diccionario
+    dia_ingles = dias.get(dia)
+    if dia_ingles:
+        cantidad = len(movies_db.loc[movies_db["day"].str.lower() == dia_ingles, "title"])
+        return {"dia" : str(dia), "cantidad" : int(cantidad)}
 
 @app.get("/franquicia/{franquicia}")
 def franquicia(franquicia: str):
