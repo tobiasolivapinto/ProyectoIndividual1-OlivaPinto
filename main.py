@@ -31,7 +31,7 @@ movies_db["genres"] = movies_db["genres"].apply(safe_literal_eval)
 #Creamos un directorio index con un mensaje de bienvenida
 @app.get("/")
 def index ():
-    return "Hola Mundo"
+    return {"Hola Mundo"}
 
 #Se desarollaran las consignas que fueron solicitadas
 
@@ -88,8 +88,8 @@ def retorno(pelicula: str):
     return {"Pelicula": str(pelicula), "Inversion": int(inversion), "Ganancia": int(ganancia), "retorno": int(retorno), "ano": int(ano)}
 
 #ML
-@app.get("/recomendacion/")
-def recomendacion(titulo):
+@app.get("/recomendacion/{titulo}")
+def recomendacion(titulo:str):
     pelicula = movies_db[movies_db['title'] == titulo]
     
     if pelicula.empty:
@@ -120,4 +120,4 @@ def recomendacion(titulo):
     
     lista_pelis = peliculas_recomendadas['title'].tolist()
     
-    return {"Lista recomendada" : lista_pelis}
+    return {"Lista recomendada" : str(lista_pelis)}
