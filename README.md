@@ -27,7 +27,8 @@ Para hacer el modelo de recomendacion decidi conservar las columnas:
 - "production_companies: Hace referencia a la compania que produjo la pelicula. 
 - "original_language": Hace referencia al idioma de origen de la pelicula. 
 - "range_year": Una columna que cree yo mismo, para dar referencia de cuando se hizo la pelicula. 
-En el modelo, se inserta el titulo de la pelicula, el cual tiene estos mismo atributos en la base de datos, y  se comienza hacer una comparacion. La idea es que cada vez que un valor coincida con el de la pelicula insertada se le va sumar un puntaje determinado. Al final se va entregar una lista con las 5 peliculas que mayor puntaje obtuvieron, es decir las que mas coincidencias poseen. 
+
+En el modelo, se inserta el titulo de la pelicula, el cual tiene estos mismo atributos en la base de datos, y se comienza a efectuar una comparacion. La idea es que cada vez que un valor coincida con el de la pelicula insertada se le va sumar un puntaje determinado. Al final se va entregar una lista con las 5 peliculas que mayor puntaje obtuvieron, es decir las que mas coincidencias poseen. 
 Se prioriza si pertenece a la franquicia, luego el genero, despues la compania productora y por utlimo el idioma y hace cuanto se hizo la pelicula. 
 
 
@@ -36,6 +37,7 @@ Archivos
 En este proyecto podras encontrar los datos ya sometidos al ETL y al EDA en el archivo "movies_db_mod7.cvs", como el nombre lo indica es una base de datos de peliculas (el mod7 corresponde a que tuve que hacerlo 7 veces antes de tenerlo en la forma correcta XD). En el archivo "main.py" podras encontrar las consultas que se nos requirieron, incluida la de Machine Learning. 
 
 
-Espero que puedas disfrutar de mi proyecto y que te sea util, sea cual sea la razon por la que elegiste investigarlo. 
+Espero que mi proyecto te sea útil, sin importar el motivo por el que decidiste investigarlo.
+Decidi confeccionar el README.md de una manera informal, para que sea mas entretenido y practico para el publico general. Que los disfrutes. 
 Saludos!
 Tobias. 
