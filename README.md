@@ -42,7 +42,9 @@ En este proyecto podras encontrar:
 Despliegue web
 
 Este link sirve para testear las consultas y el modelo de recomendacion de peliculas (este ultimo tarda un poco, no se preocupen ;)).
+
 https://render-proyectoindividual1-olivapinto.onrender.com
+
 Le deben agregar un "/docs" al final para entrar en el entorno de prueba, si no lo hacen, solamente podran ver el mensaje de bienvenida. 
 
 Cierre
