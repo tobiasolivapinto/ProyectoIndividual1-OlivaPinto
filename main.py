@@ -7,7 +7,7 @@ import numpy as np
 app = FastAPI()
 
 #Carga de base de datos con las tarnsformaciones ya realizdas 
-movies_db = pd.read_csv("movies_db_mod7.cvs")
+movies_db = pd.read_csv("Bases de Datos/movies_db_EDA.cvs")
 
 #Definimos funcion para cambiar de str a list
 def safe_literal_eval(x):
