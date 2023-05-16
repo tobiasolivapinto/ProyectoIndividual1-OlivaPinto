@@ -5,7 +5,7 @@ Hola! Como estas?
 
 Me presento, soy Tobias Oliva Pinto, estudiante de Data Science en la academia Henry (por ahora ;)). Si quieres saber mas sobre mi chequea mi perfil.
 
-Este es mi primer proyecto formal de Data Science, como puedes ver, se llama Proyecto Individual 1 - Henry. Te contare un poco acerca de el. 
+Este es mi primer proyecto completo de Data Science, como puedes ver, se llama Proyecto Individual 1 - Henry. Te contare un poco acerca de el. 
 El nombre formal, acorde a Henry, es "PROYECTO INDIVIDUAL Nº1 - Machine Learning Operations (MLOps)". Aqui podras encontrar un proyecto que consta de dos partes:
 La primera, es la parte de Data Engeniering, donde basicamente hicimos el proceso de ETL (Extraccion, Transformacion, Carga). 
 Puede que este concepto no se claro para todo el mundo, no se preocupen, mas adelante detallaremos la informacion necesaria para que cualquiera puede comprender lo que encontrara aqui. 
