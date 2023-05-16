@@ -34,8 +34,11 @@ Se prioriza si pertenece a la franquicia, luego el genero, despues la compania p
 
 Archivos
 
-En este proyecto podras encontrar los datos ya sometidos al ETL y al EDA en el archivo "movies_db_mod7.cvs", como el nombre lo indica es una base de datos de peliculas (el mod7 corresponde a que tuve que hacerlo 7 veces antes de tenerlo en la forma correcta XD). En el archivo "main.py" podras encontrar las consultas que se nos requirieron, incluida la de Machine Learning. 
+En este proyecto podras encontrar:
+- Los datos ya sometidos al ETL y al EDA en el archivo "movies_db_mod7.cvs", como el nombre lo indica es una base de datos de peliculas (el mod7 corresponde a que tuve que hacerlo 7 veces antes de tenerlo en la forma correcta XD). 
+- En el archivo "main.py" podras encontrar las consultas que se nos requirieron, incluida la de Machine Learning. 
 
+Cierre
 
 Espero que mi proyecto te sea útil, sin importar el motivo por el que decidiste investigarlo.
 Decidi confeccionar el README.md de una manera informal, para que sea mas entretenido y practico para el publico general. Que los disfrutes. 
