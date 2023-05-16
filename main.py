@@ -1,7 +1,6 @@
 #Librerias Utilizadas
 from fastapi import FastAPI
 import pandas as pd
-import ast
 import numpy as np
 
 #Creacion de la APP
@@ -17,7 +16,9 @@ movies_db = pd.read_csv("movies_db_mod7.cvs")
 #Definimos funcion para cambiar de str a list
 def safe_literal_eval(x):
     if isinstance(x, str) and x != 'nan':
-        return ast.literal_eval(x)
+        # Remover los corchetes y las comillas
+        x = x.strip('[]').replace("'", "").split(", ")
+        return x
     else:
         return np.nan
 
