@@ -33,18 +33,18 @@ En el modelo, se inserta el título de la película, el cual tiene estos mismo a
 
 ## Archivos
 En este proyecto podrás encontrar:
-- **Bases de Datos:** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/tree/main/Bases%20de%20Datos") 
-	- **movies_dataset.csv** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/Bases%20de%20Datos/movies_dataset.csv")  →  Los datos crudos tal y como nos los dieron.
-	- **movies_db_ETL.cvs** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/Bases%20de%20Datos/movies_db_ETL.cvs")  →  Los datos despues de haber realizado el ETL.
-	- **movies_db_EDA.cvs** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/Bases%20de%20Datos/movies_db_EDA.cvs")  →  Los datos despues de haber realizado el EDA.
-- **ETL-EDA:** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/tree/main/ETL%20-%20EDA") 
-	- **ETL.ipynb:** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/ETL%20-%20EDA/ETL.ipynb")  →  Extracción, Transformación y Carga de los datos. 
-	- **EDA.ipynb:** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/ETL%20-%20EDA/EDA.ipynb")  →  Analisis Exploratorio de Datos
-- **main.py:** [(link)]("https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/main.py")  →  Las consultas que se nos requirieron, incluida la de Machine Learning.
+- **Bases de Datos:** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/tree/main/Bases%20de%20Datos) 
+	- **movies_dataset.csv** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/Bases%20de%20Datos/movies_dataset.csv)  →  Los datos crudos tal y como nos los dieron.
+	- **movies_db_ETL.cvs** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/Bases%20de%20Datos/movies_db_ETL.cvs)  →  Los datos despues de haber realizado el ETL.
+	- **movies_db_EDA.cvs** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/Bases%20de%20Datos/movies_db_EDA.cvs)  →  Los datos despues de haber realizado el EDA.
+- **ETL-EDA:** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/tree/main/ETL%20-%20EDA) 
+	- **ETL.ipynb:** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/ETL%20-%20EDA/ETL.ipynb)  →  Extracción, Transformación y Carga de los datos. 
+	- **EDA.ipynb:** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/ETL%20-%20EDA/EDA.ipynb)  →  Analisis Exploratorio de Datos
+- **main.py:** [(link)](https://github.com/tobiasolivapinto/ProyectoIndividual1-OlivaPinto/blob/main/main.py)  →  Las consultas que se nos requirieron, incluida la de Machine Learning.
 
 ## Despliegue Web
 Este link sirve para testear las consultas y el modelo de recomendación de películas (este último tarda un poco, no se preocupen ;)).
-- **Despliegue web:** [(link)]("https://render-proyectoindividual1-olivapinto.onrender.com/docs")
+- **Despliegue web:** [(link)](https://render-proyectoindividual1-olivapinto.onrender.com/docs)
 
 ## Cierre
 Espero que mi proyecto te sea útil, sin importar el motivo por el que decidiste investigarlo. Decidí confeccionar el README.md de una manera informal, para que sea más entretenido y práctico para el público general. Que los disfrutes. Saludos! Tobías.
