@@ -4,6 +4,7 @@
 
 ## Índice 
 - [Índice](#indice)
+- [Presentación](#presentacion)
 - [Introducción](#introducción)
 - [Primera Parte](#primeraparte)
 - [Segunda Parte](#segundaparte)
@@ -11,9 +12,13 @@
 - [Despliegue Web](#despliegueweb)
 - [Cierre](#cierre)
 
-## Introducción 
-¡Hola! ¿Cómo estás? Me presento, soy Tobias Oliva Pinto, estudiante de Data Science en la academia Henry (por ahora ;)). Si quieres saber más sobre mi chequea mi perfil.
+## Presentación
+**[Linkedin](https://www.linkedin.com/in/olivapintotobias/)**
+ <img src="https://media.licdn.com/dms/image/D4D03AQHOo19d5aSn0A/profile-displayphoto-shrink_800_800/0/1687974921520?e=1694044800&v=beta&t=iOkiAK7xkoaArzy-e_BEmHQhquDcNcIfqy97K3qYwfA" alt="Imagen" width="200" style="margin-right: 20px;">
+Hola de nuevo! Por si no viste mi primer repositorio, me presento otra vez. Soy Tobias Oliva, estudiante de la carrera Data Science en Henry (por ahora... ;)), para mas información puedes revi. Este es mi segundo proyecto induvidual de la carrera. 
+¡Hola! ¿Como estas? Me presento, soy Tobias Oliva Pinto, estudiante de Data Science en la academia Henry (por ahora ;)). Para ser mas preciso, tambien soy un ingeniero industrial de 25 años de Córdoba, Argentina. Mi pasión por la innovación y la exploración me ha llevado al emocionante mundo de la ciencia de datos. Combino habilidades técnicas y visión práctica para descubrir ideas transformadoras. Tengo experiencia en higiene y seguridad en la industria química, lo cual me brinda un sólido entendimiento de los aspectos prácticos y la importancia de mantener entornos seguros.
 
+## Introducción 
 Este es mi primer proyecto completo de Data Science, como puedes ver, se llama Proyecto Individual N°1 - Henry. Te contaré un poco acerca de él. El nombre formal, acorde a Henry, es "PROYECTO INDIVIDUAL Nº1 - Machine Learning Operations (MLOps)". Aquí podrás encontrar un proyecto que consta de dos partes: La primera, es la parte de Data Engeniering, donde básicamente hicimos el proceso de ETL (Extracción, Transformación, Carga). La segunda, es la parte de Machine Learning, donde tuvimos que hacer el EDA (Análisis Exploratorio de Datos) para preparar los datos que nos habían proporcionado para confeccionar el modelo de Machine Learning. Puede que estos conceptos no sean claros para todo el mundo, no se preocupen, más adelante detallaremos la información necesaria para que cualquiera pueda comprender lo que encontrará aquí.
 
 ## Primera Parte 
