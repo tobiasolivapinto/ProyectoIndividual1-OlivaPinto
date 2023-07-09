@@ -17,8 +17,7 @@
 **[Linkedin](https://www.linkedin.com/in/olivapintotobias/)**
 
  <img src="https://media.licdn.com/dms/image/D4D03AQHOo19d5aSn0A/profile-displayphoto-shrink_800_800/0/1687974921520?e=1694044800&v=beta&t=iOkiAK7xkoaArzy-e_BEmHQhquDcNcIfqy97K3qYwfA" alt="Imagen" width="200" style="margin-right: 20px;">
- 
-Hola de nuevo! Por si no viste mi primer repositorio, me presento otra vez. Soy Tobias Oliva, estudiante de la carrera Data Science en Henry (por ahora... ;)), para mas información puedes revi. Este es mi segundo proyecto induvidual de la carrera. 
+
 ¡Hola! ¿Como estas? Me presento, soy Tobias Oliva Pinto, estudiante de Data Science en la academia Henry (por ahora ;)). Para ser mas preciso, tambien soy un ingeniero industrial de 25 años de Córdoba, Argentina. Mi pasión por la innovación y la exploración me ha llevado al emocionante mundo de la ciencia de datos. Combino habilidades técnicas y visión práctica para descubrir ideas transformadoras. Tengo experiencia en higiene y seguridad en la industria química, lo cual me brinda un sólido entendimiento de los aspectos prácticos y la importancia de mantener entornos seguros.
 
 ## Introducción 
